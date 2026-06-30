@@ -4,6 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import profile from "../assets/profile.jpg";
 import resume from "../assets/Hithaishi.pdf";
 
+
 export default function Hero() {
   return (
     <section className="min-h-screen flex items-center px-4 sm:px-6 pt-24">

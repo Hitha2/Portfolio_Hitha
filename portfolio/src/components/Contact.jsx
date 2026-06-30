@@ -9,15 +9,19 @@ import {
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 px-6">
+    <section
+      id="contact"
+      className="py-16 md:py-24 px-4 sm:px-6"
+    >
       <div className="max-w-4xl mx-auto">
 
+        {/* Heading */}
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-4xl md:text-5xl font-bold text-center mb-14"
+          className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-10 md:mb-14"
         >
           Contact Me
         </motion.h2>
@@ -27,14 +31,13 @@ export default function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="bg-slate-900 p-10 rounded-3xl shadow-lg text-center"
+          className="bg-slate-900 p-5 sm:p-8 md:p-10 rounded-2xl md:rounded-3xl shadow-lg text-center"
         >
-
-          <h3 className="text-2xl font-semibold mb-6 text-blue-500">
+          <h3 className="text-xl sm:text-2xl font-semibold mb-5 text-blue-500">
             Get In Touch
           </h3>
 
-          <p className="text-gray-400 mb-10 leading-relaxed">
+          <p className="text-sm sm:text-base text-gray-400 mb-8 md:mb-10 leading-relaxed">
             I'm actively seeking opportunities in Software Development,
             Full-Stack Development, and Web Development. Feel free to
             connect with me for job opportunities, collaborations, or
@@ -42,25 +45,25 @@ export default function Contact() {
           </p>
 
           {/* Contact Details */}
-          <div className="space-y-6 mb-10">
+          <div className="space-y-5 mb-8 md:mb-10">
 
-            <div className="flex items-center justify-center gap-4">
-              <FaEnvelope className="text-blue-500 text-xl" />
-              <span className="text-gray-300">
+            <div className="flex items-center justify-center gap-3">
+              <FaEnvelope className="text-blue-500 text-lg sm:text-xl flex-shrink-0" />
+              <span className="text-sm sm:text-base text-gray-300 break-all">
                 kulalhithaishi@gmail.com
               </span>
             </div>
 
-            <div className="flex items-center justify-center gap-4">
-              <FaPhone className="text-blue-500 text-xl" />
-              <span className="text-gray-300">
+            <div className="flex items-center justify-center gap-3">
+              <FaPhone className="text-blue-500 text-lg sm:text-xl flex-shrink-0" />
+              <span className="text-sm sm:text-base text-gray-300">
                 +91 7411606762
               </span>
             </div>
 
-            <div className="flex items-center justify-center gap-4">
-              <FaMapMarkerAlt className="text-blue-500 text-xl" />
-              <span className="text-gray-300">
+            <div className="flex items-center justify-center gap-3">
+              <FaMapMarkerAlt className="text-blue-500 text-lg sm:text-xl flex-shrink-0" />
+              <span className="text-sm sm:text-base text-gray-300 text-center">
                 Mangalore, Karnataka, India
               </span>
             </div>
@@ -68,7 +71,7 @@ export default function Contact() {
           </div>
 
           {/* Social Links */}
-          <div className="flex justify-center gap-8 text-3xl mb-10">
+          <div className="flex justify-center gap-6 sm:gap-8 text-2xl sm:text-3xl">
 
             <a
               href="https://github.com/Hitha2"
@@ -89,14 +92,6 @@ export default function Contact() {
             </a>
 
           </div>
-
-          {/* Contact Button */}
-          {/* <a
-            href="mailto:kulalhithaishi@gmail.com"
-            className="inline-block bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-xl font-medium transition duration-300"
-          >
-            Send Email
-          </a> */}
 
         </motion.div>
 

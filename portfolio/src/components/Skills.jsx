@@ -34,7 +34,6 @@ const skillCategories = [
       { name: "Tailwind CSS", icon: <SiTailwindcss /> },
     ],
   },
-
   {
     title: "Backend",
     skills: [
@@ -45,7 +44,6 @@ const skillCategories = [
       { name: "PHP", icon: <FaPhp /> },
     ],
   },
-
   {
     title: "Database",
     skills: [
@@ -53,7 +51,6 @@ const skillCategories = [
       { name: "MySQL", icon: <SiMysql /> },
     ],
   },
-
   {
     title: "Tools & Technologies",
     skills: [
@@ -67,7 +64,10 @@ const skillCategories = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-24 px-6">
+    <section
+      id="skills"
+      className="py-16 md:py-24 px-4 sm:px-6"
+    >
       <div className="max-w-6xl mx-auto">
 
         <motion.h2
@@ -75,49 +75,50 @@ export default function Skills() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-5xl font-bold text-center mb-12"
+          className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 md:mb-12"
         >
           Skills
         </motion.h2>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8">
 
           {skillCategories.map((category) => (
             <motion.div
               key={category.title}
               whileHover={{ scale: 1.03 }}
-              className="bg-slate-900 p-8 rounded-3xl shadow-lg"
+              className="bg-slate-900 p-5 sm:p-6 md:p-8 rounded-2xl md:rounded-3xl shadow-lg"
             >
-              <h3 className="text-2xl font-semibold text-blue-500 mb-6">
+              <h3 className="text-xl sm:text-2xl font-semibold text-blue-500 mb-5">
                 {category.title}
               </h3>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-3 sm:gap-4">
                 {category.skills.map((skill) => (
                   <div
                     key={skill.name}
-                    className="flex items-center gap-3 bg-slate-800 p-4 rounded-xl"
+                    className="flex items-center gap-2 sm:gap-3 bg-slate-800 p-3 sm:p-4 rounded-xl"
                   >
-                    <span className="text-2xl text-blue-400">
+                    <span className="text-xl sm:text-2xl text-blue-400">
                       {skill.icon}
                     </span>
 
-                    <span>{skill.name}</span>
+                    <span className="text-sm sm:text-base">
+                      {skill.name}
+                    </span>
                   </div>
                 ))}
               </div>
             </motion.div>
           ))}
-
         </div>
 
-        {/* Soft Skills + Manual Testing */}
-        <div className="mt-16">
-          <h3 className="text-3xl font-bold text-center mb-8 text-blue-500">
+        {/* Soft Skills */}
+        <div className="mt-12 md:mt-16">
+          <h3 className="text-2xl sm:text-3xl font-bold text-center mb-6 md:mb-8 text-blue-500">
             Soft Skills & Testing
           </h3>
 
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap justify-center gap-3">
             {[
               "Problem Solving",
               "Communication",
@@ -133,7 +134,7 @@ export default function Skills() {
             ].map((skill) => (
               <span
                 key={skill}
-                className="bg-slate-800 px-5 py-3 rounded-full border border-slate-700 hover:border-blue-500 transition"
+                className="text-sm sm:text-base bg-slate-800 px-4 py-2 sm:px-5 sm:py-3 rounded-full border border-slate-700 hover:border-blue-500 transition"
               >
                 {skill}
               </span>

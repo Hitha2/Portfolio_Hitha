@@ -1,60 +1,70 @@
 import { motion } from "framer-motion";
 import { FaCertificate, FaAward } from "react-icons/fa";
-
+import nptel1 from "../assets/certificates/nptel1.png";
+import nptel2 from "../assets/certificates/nptel2.png";
+import webdev from "../assets/certificates/webdev.png";
 const certifications = [
   {
     title: "Research Methodology and IPR",
     provider: "NPTEL",
-    icon: <FaCertificate />,
+    image: nptel1,
   },
   {
     title: "Privacy and Security in Online Social Media",
     provider: "NPTEL",
-    icon: <FaCertificate />,
+    image: nptel2,
   },
   {
     title: "Web Development Certification",
     provider: "Kakunje Software Pvt. Ltd.",
-    icon: <FaCertificate />,
+    image: webdev,
   },
 ];
 
-const achievements = [
-  "Completed MCA with CGPA 8.62",
-  "Completed BCA with CGPA 8.87",
-  "Successfully completed Web Development Internship",
-  "Successfully completed Python Programming Internship",
-  "Developed AI-Based Pneumonia Detection System",
-  "Built Full-Stack MERN E-Commerce Website",
-];
+// const achievements = [
+//   "Completed MCA with CGPA 8.62",
+//   "Completed BCA with CGPA 8.87",
+//   "Successfully completed Web Development Internship",
+//   "Successfully completed Python Programming Internship",
+//   "Developed AI-Based Pneumonia Detection System",
+//   "Built Full-Stack MERN E-Commerce Website",
+// ];
 
 export default function Certifications() {
   return (
-    <section id="certifications" className="py-24 px-6">
+    <section
+      id="certifications"
+      className="py-16 md:py-24 px-4 sm:px-6"
+    >
       <div className="max-w-6xl mx-auto">
 
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-14">
-          Certifications & Achievements
+        {/* Heading */}
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-10 md:mb-14">
+          Certifications
         </h2>
 
         {/* Certifications */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-8 mb-12 md:mb-16">
 
           {certifications.map((cert, index) => (
             <motion.div
               key={index}
               whileHover={{ y: -8 }}
-              className="bg-slate-900 p-6 rounded-2xl text-center shadow-lg"
+              className="bg-slate-900 p-5 sm:p-6 rounded-2xl text-center shadow-lg"
             >
-              <div className="text-4xl text-blue-500 mb-4 flex justify-center">
-                {cert.icon}
-              </div>
+             <a href={cert.image} target="_blank" rel="noreferrer">
+              <img
+                src={cert.image}
+                alt={cert.title}
+                className="w-full h-48 object-cover rounded-xl mb-4 hover:scale-105 transition"
+              />
+            </a>
 
-              <h3 className="text-xl font-semibold mb-2">
+              <h3 className="text-lg sm:text-xl font-semibold mb-2">
                 {cert.title}
               </h3>
 
-              <p className="text-gray-400">
+              <p className="text-sm sm:text-base text-gray-400">
                 {cert.provider}
               </p>
             </motion.div>
@@ -63,22 +73,22 @@ export default function Certifications() {
         </div>
 
         {/* Achievements */}
-        <div className="bg-slate-900 rounded-3xl p-8">
+        {/* <div className="bg-slate-900 rounded-2xl md:rounded-3xl p-5 sm:p-8">
 
-          <h3 className="text-3xl font-bold text-center mb-8 text-blue-500">
+          <h3 className="text-2xl sm:text-3xl font-bold text-center mb-6 md:mb-8 text-blue-500">
             Achievements
           </h3>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
 
             {achievements.map((item, index) => (
               <div
                 key={index}
-                className="flex items-center gap-4 bg-slate-800 p-4 rounded-xl"
+                className="flex items-start gap-3 sm:gap-4 bg-slate-800 p-4 rounded-xl"
               >
-                <FaAward className="text-blue-500 text-xl" />
+                <FaAward className="text-blue-500 text-lg sm:text-xl mt-1" />
 
-                <span className="text-gray-300">
+                <span className="text-sm sm:text-base text-gray-300 leading-relaxed">
                   {item}
                 </span>
               </div>
@@ -86,7 +96,7 @@ export default function Certifications() {
 
           </div>
 
-        </div>
+        </div> */}
 
       </div>
     </section>
