@@ -6,7 +6,7 @@ const education = [
     institution:
       "St Joseph Engineering & Technology, Mangalore",
     year: "2024 – 2026",
-    score: "CGPA: 8.62",
+    score: "CGPA: 8.58",
   },
   {
     degree: "Bachelor of Computer Applications (BCA)",

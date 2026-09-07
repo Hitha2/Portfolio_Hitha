@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import profile from "../assets/profile.jpg";
-import resume from "../assets/Hithaishi.pdf";
+import resume from "../assets/HithaishiKulal.pdf";
 
 
 export default function Hero() {

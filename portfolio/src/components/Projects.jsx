@@ -2,20 +2,7 @@ import { motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 
 const projects = [
-  {
-    title: "AI-Based Pneumonia Detection",
-    description:
-      "Developed an AI-powered healthcare solution that detects pneumonia from chest X-ray images using Deep Learning and Convolutional Neural Networks (CNN).",
-    technologies: [
-      "Python",
-      "TensorFlow",
-      "CNN",
-      "Machine Learning",
-    ],
-    github: "https://github.com/Hitha2",
-  },
-
-  {
+    {
     title: "Sarathi Furniture E-Commerce Website",
     description:
       "Built a full-stack MERN e-commerce platform with authentication, product management, shopping cart, order tracking, and responsive UI.",
@@ -26,7 +13,20 @@ const projects = [
       "MongoDB",
       "JWT",
     ],
-    github: "https://github.com/Hitha2",
+    github: "https://github.com/Hitha2/Sarathi-Furniture",
+  },
+  
+  {
+    title: "AI-Based Pneumonia Detection",
+    description:
+      "Developed an AI-powered healthcare solution that detects pneumonia from chest X-ray images using Deep Learning and Convolutional Neural Networks (CNN).",
+    technologies: [
+      "Python",
+      "TensorFlow",
+      "CNN",
+      "Machine Learning",
+    ],
+    github: "https://github.com/Hitha2/AI-Based-Pneumonia-Detection-Using-Chest-XRay",
   },
 
   {
@@ -40,7 +40,7 @@ const projects = [
       "CSS",
       "JavaScript",
     ],
-    github: "https://github.com/Hitha2",
+    github: "https://github.com/Hitha2/Music-Academy-website",
   },
 ];
 

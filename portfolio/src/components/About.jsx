@@ -80,7 +80,7 @@ export default function About() {
 
           <div className="bg-slate-900 rounded-2xl p-4 sm:p-6 text-center">
             <h3 className="text-2xl sm:text-3xl font-bold text-blue-500">
-              8.62
+              8.58
             </h3>
             <p className="text-sm sm:text-base text-gray-400 mt-2">
               MCA CGPA
